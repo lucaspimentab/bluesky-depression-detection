@@ -1,0 +1,22 @@
+# Environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+.ipynb_checkpoints/
+
+# Build / tooling artifacts
+*.egg-info/
+.env
+.env.*
+.idea/
+.vscode/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Outputs and models
+outputs/
+models/
+

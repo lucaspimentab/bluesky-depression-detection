@@ -1,6 +1,6 @@
 # Bluesky-Depression
 
-Classificação de conteúdo depressivo em posts do Bluesky. O repositório agora contém apenas o pipeline de dados e os scripts de treinamento/avaliação de transformadores (BERT, RoBERTa e MentalBERT), sem módulos de metaheurísticas.
+Classificação de conteúdo depressivo em posts do Bluesky.
 
 ## Estrutura
 - `data/raw`: CSVs originais/limpos.
@@ -10,8 +10,7 @@ Classificação de conteúdo depressivo em posts do Bluesky. O repositório agor
 - `src/transformers`: fine-tuning e avaliação rápida dos modelos de texto.
 - `notebooks`: análises exploratórias.
 - `assets/figures`: figuras geradas (word clouds, histogramas, etc.).
-- `docs/papers`: artigo de referência.
-- `archive/legacy_scripts`: scripts antigos não usados no fluxo atual.
+- `docs/papers`: paper
 
 ## Requisitos
 Python 3.12+ com pandas, scikit-learn, seaborn, matplotlib, emoji, PyTorch e Hugging Face Transformers instalados.
@@ -39,5 +38,3 @@ python src/transformers/bert/main.py \
   --dataset data/raw/dataset_final_3003.csv \
   --saida data/derived
 ```
-
-Obs: outputs de modelos e calibrações devem ser salvos em `outputs/` (ignorados pelo git). Ajuste caminhos e hiperparâmetros conforme necessário.
